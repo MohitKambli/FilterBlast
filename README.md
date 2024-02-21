@@ -9,6 +9,9 @@ FilterBlast is a web application that allows users to upload images, apply vario
 <li><strong>Filter Selection:</strong> FilterBlast offers a wide range of filters, including hudson, inkwell, kelvin, lark, lofi, moon, perpetua, and toaster, allowing users to choose the perfect filter for their images.</li>
 <li><strong>Live Preview:</strong> Users can preview the filtered images in real-time and compare them with the original image.</li>
 <li><strong>Download:</strong> Once satisfied with the filtered image, users can download it with a single click, making it easy to save and share their creations.</li>
+<li><strong>Flask Server Hosting on PythonAnywhere:</strong> The Flask server powering FilterBlast's backend has been hosted on PythonAnywhere, ensuring reliable and scalable performance for image processing, filter application, and image storage on AWS S3.</li>
+<li><strong>React Application Hosting on Netlify:</strong> FilterBlast's frontend, developed with React.js, has been seamlessly hosted on Netlify. This ensures a responsive and interactive user interface, allowing users to easily upload images, apply filters, and preview/download the filtered images.</li>
+<li><strong>Image Fetching, Displaying, and Downloading from Amazon S3:</strong> Utilizing Amazon Simple Storage Service (S3), FilterBlast fetches, displays, and enables users to download images seamlessly. Through integration with AWS S3 and the pilgram library for filter application, users can access a wide range of filters and effortlessly enhance their images on FilterBlast.</li>
 </ul>
 
 ## Technologies Used
@@ -19,6 +22,9 @@ FilterBlast is a web application that allows users to upload images, apply vario
 <li><strong>AWS S3:</strong> Amazon Simple Storage Service (S3) is used for storing and serving images, ensuring scalability and reliability.</li>
 <li><strong>pilgram:</strong> The pilgram library is utilized for applying filters to images, offering a wide range of filter options for users.</li>
 <li><strong>Boto3:</strong> The Boto3 library is used to interact with AWS S3, enabling seamless image storage and retrieval.</li>
+<li><strong>Flask Server Hosting on PythonAnywhere: </strong> The Flask server powering FilterBlast's backend has been hosted on PythonAnywhere, ensuring reliable and scalable performance for image processing, filter application, and image storage on AWS S3.</li>
+<li><strong>React Application Hosting on Netlify:</strong> FilterBlast's frontend, developed with React.js, has been seamlessly hosted on Netlify. This ensures a responsive and interactive user interface, allowing users to easily upload images, apply filters, and preview/download the filtered images.</li>
+<li><strong>Image Fetching, Displaying, and Downloading from Amazon S3:</strong> Utilizing Amazon Simple Storage Service (S3), FilterBlast fetches, displays, and enables users to download images seamlessly. Through integration with AWS S3 and the pilgram library for filter application, users can access a wide range of filters and effortlessly enhance their images on FilterBlast.</li>
 </ul>
 
 ## Installation and Usage
