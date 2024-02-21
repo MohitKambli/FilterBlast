@@ -33,6 +33,7 @@ Access the application in your web browser.
 https://transcendent-horse-3c6545.netlify.app/
 
 ## Screenshots
+
 <div style= "float: left;width: 20%;padding: 100px;">
   <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS1.png" width=600 height=300>
   <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS2.png" width=600 height=300>
