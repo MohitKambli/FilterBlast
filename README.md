@@ -5,8 +5,8 @@ FilterBlast is a web application that allows users to upload images, apply vario
 ## Features
 
 <div style= "float: left;width: 50%;padding: 100px;">
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageUploadDownload.jpg" width=400 height=250>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageFilter.png" width=400 height=250>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageUploadDownload.jpg" width=400 height=150>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageFilter.png" width=400 height=150>
 </div>
 
 <ul>
