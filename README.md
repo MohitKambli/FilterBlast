@@ -5,9 +5,9 @@ FilterBlast is a web application that allows users to upload images, apply vario
 ## Features
 
 <div style= "float: left;width: 50%;padding: 100px;">
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageUpload.png" width=400 height=250>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageFilter.png" width=400 height=250>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageDownload.png" width=400 height=250>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageUpload.png" width=400 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageFilter.png" width=550 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageDownload.png" width=400 height=300>
 </div>
 
 <ul>
@@ -23,9 +23,9 @@ FilterBlast is a web application that allows users to upload images, apply vario
 ## Technologies Used
 
 <div style= "float: left;width: 50%;padding: 100px;">
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/ReactJS.png" width=400 height=250>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/pythonanywhere.png" width=400 height=250>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/amazons3.png" width=400 height=250>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/ReactJS.png" width=400 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/pythonanywhere.png" width=400 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/amazons3.png" width=400 height=300>
 </div>
 
 <ul>
