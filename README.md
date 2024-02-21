@@ -34,10 +34,10 @@ https://transcendent-horse-3c6545.netlify.app/
 
 ## Screenshots
 <div style= "float: left;width: 20%;padding: 100px;">
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS1.jpg" width=600 height=300>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS2.jpg" width=600 height=300>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS3.jpg" width=600 height=300>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS4.jpg" width=600 height=300>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS5.jpg" width=600 height=300>
-  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS6.jpg" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS1.png" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS2.png" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS3.png" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS4.png" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS5.png" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/SS6.png" width=600 height=300>
 </div>
