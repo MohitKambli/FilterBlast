@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# FilterBlast
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FilterBlast is a web application that allows users to upload images, apply various filters to them, and download the filtered images. With an intuitive user interface and seamless integration with AWS S3 for image storage and processing, FilterBlast provides a convenient platform for users to enhance their images with stunning filters.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+Image Upload: Users can easily upload their images to the platform with a simple file input interface.
+Filter Selection: FilterBlast offers a wide range of filters, including hudson, inkwell, kelvin, lark, lofi, moon, perpetua, and toaster, allowing users to choose the perfect filter for their images.
+Live Preview: Users can preview the filtered images in real-time and compare them with the original image.
+Download: Once satisfied with the filtered image, users can download it with a single click, making it easy to save and share their creations.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Frontend: Built with React.js, FilterBlast provides a responsive and interactive user interface for seamless image uploading and filtering.
+Backend: Powered by Flask, the backend handles image processing, filter application, and image storage on AWS S3.
+AWS S3: Amazon Simple Storage Service (S3) is used for storing and serving images, ensuring scalability and reliability.
+pilgram: The pilgram library is utilized for applying filters to images, offering a wide range of filter options for users.
+Boto3: The Boto3 library is used to interact with AWS S3, enabling seamless image storage and retrieval.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Usage
 
-### `npm test`
+To run FilterBlast locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository to your local machine.
+Install the necessary dependencies for both the frontend and backend.
+Configure AWS S3 credentials in the backend Flask app.
+Start the backend Flask server.
+Start the React development server.
+Access the application in your web browser.
 
-### `npm run build`
+## Link
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://transcendent-horse-3c6545.netlify.app/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+<div style= "float: left;width: 20%;padding: 100px;">
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS1.jpg" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS2.jpg" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS3.jpg" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS4.jpg" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS5.jpg" width=600 height=300>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/Screenshots/SS6.jpg" width=600 height=300>
+</div>
