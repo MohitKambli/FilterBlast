@@ -4,6 +4,12 @@ FilterBlast is a web application that allows users to upload images, apply vario
 
 ## Features
 
+<div style= "float: left;width: 50%;padding: 100px;">
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageUpload.png" width=300 height=200>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageFilter.png" width=300 height=200>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/imageDownload.png" width=300 height=200>
+</div>
+
 <ul>
 <li><strong>Image Upload:</strong> Users can easily upload their images to the platform with a simple file input interface.</li>
 <li><strong>Filter Selection:</strong> FilterBlast offers a wide range of filters, including hudson, inkwell, kelvin, lark, lofi, moon, perpetua, and toaster, allowing users to choose the perfect filter for their images.</li>
@@ -15,6 +21,12 @@ FilterBlast is a web application that allows users to upload images, apply vario
 </ul>
 
 ## Technologies Used
+
+<div style= "float: left;width: 50%;padding: 100px;">
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/ReactJS.png" width=300 height=200>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/pythonanywhere.png" width=300 height=200>
+  <img src="https://github.com/MohitKambli/FilterBlast/blob/main/screenshots/amazons3.png" width=300 height=200>
+</div>
 
 <ul>
 <li><strong>Frontend:</strong> Built with React.js, FilterBlast provides a responsive and interactive user interface for seamless image uploading and filtering.</li>
