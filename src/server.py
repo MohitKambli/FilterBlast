@@ -7,14 +7,11 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 import os
 
-def configure() :
-    load_dotenv()
-
 app = Flask(__name__)
 CORS(app)
 
 # Initialize AWS S3 client
-s3 = boto3.client('s3', region_name='us-east-1', aws_access_key_id=os.getenv('aws_access_key_id'), aws_secret_access_key=os.getenv('aws_secret_access_key'))
+s3 = boto3.client('s3', region_name='us-east-1', aws_access_key_id='AKIA6ODU2UVAROXT5ZEE', aws_secret_access_key='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')
 bucket_name = 'filter-blast-bucket'
 
 @app.route('/upload_image', methods=['POST'])

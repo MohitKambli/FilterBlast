@@ -26,7 +26,7 @@ function App() {
     formData.append('image', file);
 
     try {
-      const response = await fetch('http://localhost:5000/upload_image', {
+      const response = await fetch('https://mohitkambli.pythonanywhere.com/upload_image', {
         method: 'POST',
         body: formData
       });
@@ -55,7 +55,7 @@ function App() {
     setSelectedFilterIndex(index);
     try {
       const imageToFilter = originalImageUrl || uploadedImage;
-      const response = await fetch('http://localhost:5000/process_and_fetch', {
+      const response = await fetch('https://mohitkambli.pythonanywhere.com/process_and_fetch', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
