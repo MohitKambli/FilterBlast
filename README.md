@@ -12,7 +12,7 @@ Download: Once satisfied with the filtered image, users can download it with a s
 ## Technologies Used
 
 Frontend: Built with React.js, FilterBlast provides a responsive and interactive user interface for seamless image uploading and filtering.
-Backend: Powered by Flask, the backend handles image processing, filter application, and image storage on AWS S3.
+Backend: Powered by Flask, the backend handles image processing, filter application, and image storage on AWS S3
 AWS S3: Amazon Simple Storage Service (S3) is used for storing and serving images, ensuring scalability and reliability.
 pilgram: The pilgram library is utilized for applying filters to images, offering a wide range of filter options for users.
 Boto3: The Boto3 library is used to interact with AWS S3, enabling seamless image storage and retrieval.
@@ -28,7 +28,7 @@ Start the backend Flask server.
 Start the React development server.
 Access the application in your web browser.
 
-## Link
+## Web App Link
 
 https://transcendent-horse-3c6545.netlify.app/
 
