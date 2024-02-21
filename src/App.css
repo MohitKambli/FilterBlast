@@ -1,38 +1,189 @@
-.App {
+.container {
+  background-color: #869898;
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selection-image {
+  width: 220px;
+  height: 120px;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-heading-input {
+  margin: -30px;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.image-row {
+  margin-top: -30px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.original-image,
+.uploaded-image {
+  max-width: 40%;
+  margin: 10px;
+  border: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+  font-family: 'Multicolore';
+  src: url('./Multicolore-Regular.ttf') format('truetype');
+}
+
+.filtered-images-container {
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filtered-image {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  margin: 10px 10px 20px; /* Adjust spacing */
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.selected-filter {
+  border: 2px solid blue; /* Add a border to indicate selection */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading-dot {
+  animation: blink 1s infinite;
+}
+
+.heading-style {
+  font-family: 'Multicolore', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  position: relative;
+  align-items: center;
+}
+
+.file-input-label {
+  outline: 2px solid black;
+  border-radius: 10px;
+  padding: 0.6em;
+  font-size: 26px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Multicolore', sans-serif;
+  font-weight: bold;
+}
+
+.download-button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 0.6em;
+  font-size: 26px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  font-family: 'Multicolore', sans-serif;
+}
+
+.div-file-input-label {
+  position: relative;
+}
+
+.file-input-label input[type="file"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -10%;
+  left: 48%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery  {
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+
+  --d: 24s; /* duration */
+  
+  display: grid;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg,#0000,#000 5% 95%,#0000);
+}
+
+.gallery .image-text {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  height: 500px;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+  border: 2px solid black;
+}
+.gallery > img:nth-child(2) {animation-delay: calc(1*var(--d)/-4)}
+.gallery > img:nth-child(3) {animation-delay: calc(2*var(--d)/-4)}
+.gallery > img:nth-child(4) {animation-delay: calc(3*var(--d)/-4)}
+.gallery > img:nth-child(5) {animation-delay: calc(4*var(--d)/-4)}
+
+@keyframes r {
+  75%    {transform: translate(-300%)}
+  75.01% {transform: translate( 100%)}
 }
