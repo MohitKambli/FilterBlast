@@ -153,11 +153,11 @@ body {
   justify-content: center;
   margin-top: 3%;
 
-  --d: 24s; /* duration */
+  --d: 16s; /* duration */
   
   display: grid;
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg,#0000,#000 5% 95%,#0000);
+  -webkit-mask: linear-gradient(90deg,#0000,#000 10% 90%,#0000);
 }
 
 .gallery .image-text {
@@ -184,6 +184,6 @@ body {
 .gallery > img:nth-child(5) {animation-delay: calc(4*var(--d)/-4)}
 
 @keyframes r {
-  75%    {transform: translate(-300%)}
-  75.01% {transform: translate( 100%)}
+  0%     { transform: translate(200%); }
+  100%   { transform: translate(-200%); }
 }
