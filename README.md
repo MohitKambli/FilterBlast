@@ -53,8 +53,7 @@ To run FilterBlast locally, follow these steps:
 
 ## Web App Link
 
-https://transcendent-horse-3c6545.netlify.app/
-
+https://musical-lokum-0e48e8.netlify.app/
 
 ## Screenshots
 
