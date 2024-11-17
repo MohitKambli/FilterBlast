@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Import your CSS file for styling
+import './App.css';
 import LoadingDot from './LoadingDot';
 import Image1 from './Images/LOFI.jpg';
 import Image2 from './Images/MOON.jpg';
@@ -16,6 +16,10 @@ function App() {
   const [selectedFilterIndex, setSelectedFilterIndex] = useState(null);
   const [isInputDisabled, setIsInputDisabled] = useState(false);
   const [showCarousel, setShowCarousel] = useState(true);
+  
+  const [showModal, setShowModal] = useState(false);
+  const [userName, setUserName] = useState('');
+  const [imageName, setImageName] = useState('');
 
   const fetchAndProcess = async (file) => {
     setIsLoading(true);
@@ -26,7 +30,8 @@ function App() {
     formData.append('image', file);
 
     try {
-      const response = await fetch('https://mohitkambli.pythonanywhere.com/upload_image', {
+      //const response = await fetch('https://mohitkambli.pythonanywhere.com/upload_image', {
+      const response = await fetch('https://flask-hello-world-zeta-lilac-30.vercel.app/upload_image', {
         method: 'POST',
         body: formData
       });
@@ -55,7 +60,7 @@ function App() {
     setSelectedFilterIndex(index);
     try {
       const imageToFilter = originalImageUrl || uploadedImage;
-      const response = await fetch('https://mohitkambli.pythonanywhere.com/process_and_fetch', {
+      const response = await fetch('https://flask-hello-world-zeta-lilac-30.vercel.app/process_and_fetch', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -72,24 +77,44 @@ function App() {
     }
   };
 
-  const handleDownload = async () => {
+  const handleDownload = () => {
+    setShowModal(true);
+  };
+
+  const handleDownloadConfirm = async () => {
     if (uploadedImage) {
       setIsLoading(true);
       setIsInputDisabled(true);
+      setShowModal(false);
       try {
         const response = await fetch(uploadedImage);
         const blob = await response.blob();
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'filtered_image.jpg');
+        link.setAttribute('download', `${imageName || 'filtered_image'}.jpg`);
         document.body.appendChild(link);
         link.click();
+        link.remove();
+        // After successful download, log the download event in the backend
+            await fetch('https://flask-hello-world-zeta-lilac-30.vercel.app/log_download', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    userName: userName,
+                    imageName: imageName || 'filtered_image',
+                    timestamp: new Date().toISOString(),
+                }),
+            });
       } catch (error) {
         console.error('Error:', error);
       } finally {
         setIsLoading(false);
         setIsInputDisabled(false);
+        setUserName("");
+        setImageName("");
       }
     }
   };
@@ -106,7 +131,6 @@ function App() {
         </div>
       </div>
 
-      {/* Carousel */}
       { showCarousel && (
         <div className="gallery">
           <img src={Image1} alt="Image1" />
@@ -115,18 +139,18 @@ function App() {
           <img src={Image4} alt="Image4" />
         </div>
       )}
-    
+
       <div className="image-row">
-        {/* Display original image */}
         {originalImage && <img src={originalImage} alt="Original" className="original-image" />}
-        {/* Display uploaded image */}
         {uploadedImage && <img src={uploadedImage} alt="Uploaded" className="uploaded-image" />}
       </div>
 
-      {/* Download button */}
-      {uploadedImage && <button onClick={!isLoading ? () => handleDownload() : null} className="download-button">Download Filtered Image</button>}
-  
-      {/* Display filtered images */}
+      {uploadedImage && (
+        <button onClick={!isLoading ? handleDownload : null} className="download-button">
+          Download Filtered Image
+        </button>
+      )}
+
       <div className="filtered-images-container">
         {filteredImages.map((imageUrl, index) => (
           <div key={index} className="tooltip-container">
@@ -140,6 +164,32 @@ function App() {
           </div>
         ))}
       </div>
+
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2>Download Image</h2>
+            <input
+              type="text"
+              placeholder="Your name*"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              className="modal-input"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Image name*"
+              value={imageName}
+              onChange={(e) => setImageName(e.target.value)}
+              className="modal-input"
+              required
+            />
+            <button onClick={handleDownloadConfirm} className="modal-button" disabled={!userName || !imageName}>Confirm</button>
+            <button onClick={() => setShowModal(false)} className="modal-button">Cancel</button>
+          </div>
+        </div>
+      )}
     </div>
   );  
 }
